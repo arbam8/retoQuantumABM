@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+:root {
+    --clear: #F2F2F2;
+    --dark: #253140;
+    --live: #4971A6;
+    --medium: #4F5F73;
+  }
+
+*{
+    color: var(--dark);
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--clear);
+}
+
+.oculto1{
+    display: none;
+}
+
+.oculto2{
+    display: none;
+}
+
+.topper{
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+}
+
+.filtgroup{
+    padding-bottom: 0.25em;
+}
+
+.textfilt{
+    display: inline;
+}
+
+.active{
+    color: var(--clear);
+    background-color: var(--live);
+}
+
+.btn1{
+    border: none;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.btn2{
+    border: none;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.btn1:hover{
+    color: var(--clear);
+    background-color: var(--live);
+}
+
+.btn2:hover{
+    color: var(--clear);
+    background-color: var(--live);
+}
+
+#d_rocas{
+    width: 95%;
+    margin: auto;
+    padding-left: 3em;
+    padding-bottom: 3em;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 0em;
+    min-height: 35em;
+}
+
+.celda{
+    background-color: white;
+    width: 20em;
+    margin-top: 2em;
+    height: 25em;
+}
+
+.texto h3{
+    background-color: white;
+    padding-left: 1em;
+    padding-top: 0.5em;
+}
+
+.texto h5{
+    background-color: white;
+    padding-left: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+}
+
+.marco{
+    text-align: center;
+    height: 20em;
+    width: auto;
+}
+
+.ilust{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    padding: 1em;
+    text-align: center;
+}
+
+/*REDUCCION-REDUCCION-REDUCCION-REDUCCION-REDUCCION-REDUCCION-REDUCCION-REDUCCION-REDUCCION*/
+
+/*max-width: 1400px max-width: 1400px max-width: 1400px max-width: 1400px max-width: 1400px*/
+@media screen and (max-width: 1400px) {
+    .celda{
+        width: 17em;
+        height: 20em;
+    }
+    .marco{
+        height: 16em;
+        width: 17em;
+    }
+}
+
+/*max-width: 1200px max-width: 1200px max-width: 1200px max-width: 1200px max-width: 1200px*/
+@media screen and (max-width: 1200px) {
+    .celda{
+        width: 15em;
+        height: 17em;
+    }
+    .marco{
+        height: 12em;
+        width: 15em;
+    }
+}
+
+/*max-width: 1080px max-width: 1080px max-width: 1080px max-width: 1080px max-width: 1080px*/
+@media screen and (max-width: 1080px) {
+    .celda{
+        width: 13em;
+        height: 15em;
+    }
+    .marco{
+        height: 10em;
+        width: 13em;
+    }
+}
+
+/*max-width: 920px max-width: 920px max-width: 920px max-width: 920px max-width: 920px*/
+@media screen and (max-width: 920px) {
+    #d_rocas{
+        width: 95%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .celda{
+        width: 15em;
+    }
+    .marco{
+        width: 15em;
+    }
+}
+
+/*max-width: 800px max-width: 800px max-width: 800px max-width: 800px max-width: 800px*/
+@media screen and (max-width: 800px) {
+    #d_rocas{
+        grid-template-columns: auto auto;
+    }
+    .celda{
+        width: 20em;
+        height: 25em;
+    }
+    .marco{
+        width: 20em;
+        height: 20em;
+    }
+}
+
+/*max-width: 730px max-width: 730px max-width: 730px max-width: 730px max-width: 730px*/
+@media screen and (max-width: 730px) {
+    .celda{
+        width: 16em;
+        height: 18em;
+    }
+    .marco{
+        width: 16em;
+        height: 14em;
+    }
+}
+
+/*max-width: 730px max-width: 730px max-width: 730px max-width: 730px max-width: 730px*/
+@media screen and (max-width: 640px) {
+    .topper{
+        font-size: 0.8em;
+    }
+    .btn1{
+        font-size: 0.8em;
+    }
+    .btn2{
+        font-size: 0.8em;
+    }
+    #d_rocas{
+        width: 100%;
+        grid-template-columns: auto;
+        padding-left: 1em;
+    }
+    .celda{
+        width: 100%;
+        height: 15em;
+    }
+    .marco{
+        width: 100%;
+        height: 11em;
+    }
+    .textfilt{
+        display: none;
+    }
+    .topper img{
+        width: 50%;
+    }
+}
